@@ -2,5 +2,5 @@
 Repositório onde irei postar as minhas atividades de desenvolvimento web  
 
 Primeira Atividade
--[Atividade1](Cartão_de_perfil)
+-[Cartão de perfil](Cartão_de_perfil)
 
