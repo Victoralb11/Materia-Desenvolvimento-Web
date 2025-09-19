@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Perfil</title>
+    <style>
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+
+        .Profile-card {
+            
+            max-height: 200px;
+            min-height: 100px;
+            max-width: 400px;
+            min-width: 250px;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        
+        .Profile-card img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        
+        .Profile-card h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #343;
+            margin: 10px 0;
+        }
+        
+       
+        .Profile-card p {
+            font-size: 16px;
+            color: #343;
+            margin: 5px 0;
+        }
+        
+        
+        .Profile-card a {
+            color: green;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .Profile-card a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Profile-card">
+        <img src="imagem_perfil.jpg "alt= "Foto de perfil"> 
+        <h2>Victor Albuquerque</h2>
+        <p>27 | Desenvolvedor</p>
+        <p>Desenvolvedor focado em back-end, entusiasta de lógica e otimização de código.</p>
+        <a href="tel:+55879999999">Telefone para contato</a>
+    </div>  
+</body>
+</html>
