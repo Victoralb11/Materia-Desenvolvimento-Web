@@ -6,7 +6,6 @@
     <title>Cartão de Perfil</title>
     <style>
         body {
-            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,7 +16,6 @@
         }
 
         .Profile-card {
-            
             max-height: 200px;
             min-height: 100px;
             max-width: 400px;
@@ -28,12 +26,11 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #fff;
-            display: flex; 
+            display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        
         
         .Profile-card img {
             width: 30px;
@@ -42,7 +39,6 @@
             object-fit: cover;
         }
         
-        
         .Profile-card h2 {
             font-size: 32px;
             font-weight: 700;
@@ -50,37 +46,42 @@
             margin: 10px 0;
         }
         
-       
         .Profile-card p {
             font-size: 16px;
             color: #343;
             margin: 5px 0;
         }
         
-        
-        .Profile-card a {
-            color: green;
-            text-decoration: none;
+       
+        .links-container {
+            display: flex;
+            gap: 10px; 
             margin-top: 10px;
         }
 
-        .Profile-card a:hover {
-            text-decoration: underline;
+        .links-container a {
+            color: green;
+            text-decoration: none;
         }
 
+        .links-container a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="Profile-card">
-        <img src="imagem_perfil.jpg "alt= "Foto de perfil"> 
+        <img src="imagem_perfil.jpg" alt="Foto de perfil">
         <h2>Victor Albuquerque</h2>
         <p>27 | Desenvolvedor</p>
         <p>Estudante de Análise e Desenvolvimento de Sistemas, com conhecimento em dados e entusiasta de back-end.</p>
-        <a href="tel:+55879999999">Telefone para contato</a>
-        <a href="https://github.com/Victoralb11">Link do git hub</a>
-    </div>  
+        <div class="links-container">
+            <a href="tel:+55879999999">Telefone para contato</a>
+            <a href="https://github.com/Victoralb11">Link do GitHub</a>
+        </div>
+    </div>
 </body>
-
 </html>
+
 
 
