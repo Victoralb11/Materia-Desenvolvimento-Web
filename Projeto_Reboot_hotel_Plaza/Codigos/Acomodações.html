@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garanhuns Palace Hotel - Acomodações</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; 
+        }
+
+        :root {
+            --cor-fundo-principal: #1f1f1f;
+            --cor-verde-escuro: #4c6d3f;
+            --cor-cinza-claro: #f5f5f5;
+            --cor-cinza-claro-bg: #e0e0e0;
+            --cor-cinza-imagem: #383838;
+            --cor-verde-quarto: #5e7a57;
+        }
+
+        body {
+            background-color: var(--cor-fundo-principal);
+            color: var(--cor-cinza-claro);
+            line-height: 1.6;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: var(--cor-fundo-principal);
+        }
+
+        .logo a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu-principal {
+            white-space: nowrap; 
+        }
+        
+        .menu-principal a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .menu-principal a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            min-height: 45vh;
+        }
+
+        .hero-texto {
+            background-color: var(--cor-cinza-claro-bg);
+            color: var(--cor-fundo-principal);
+            flex: 1;
+            padding: 60px 40px 60px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-texto h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            margin-top: 0; 
+        }
+
+        .hero-texto p {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .hero-imagem {
+            background-color: var(--cor-cinza-imagem);
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+        
+        .hero-imagem img {
+             max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .btn-reserva {
+            background-color: var(--cor-verde-escuro);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-reserva:hover {
+            background-color: #659253;
+        }
+
+        .lista-quartos {
+            padding: 50px 0;
+            background-color: var(--cor-fundo-principal);
+        }
+        
+        .quarto-item {
+            display: flex;
+            width: 80%;
+            margin: 40px auto;
+            min-height: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden; 
+        }
+
+        .quarto-imagem {
+            flex: 2;
+            background-color: var(--cor-verde-escuro); 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            color: var(--cor-cinza-claro);
+            font-size: 1.2em;
+        }
+        
+        .quarto-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+
+        .quarto-descricao {
+            flex: 1;
+            background-color: var(--cor-cinza-imagem);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: var(--cor-cinza-claro);
+        }
+
+        .quarto-descricao h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .quarto-descricao p {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--cor-cinza-claro-bg);
+        }
+
+        .quarto-descricao .btn-reserva {
+            align-self: flex-end;
+            margin-top: 15px;
+        }
+
+        .rodape {
+            background-color: var(--cor-verde-escuro);
+            padding: 20px 100px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .rodape h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            margin-top: 0; 
+        }
+        
+        .redes-sociais, .pagamentos {
+            flex-basis: auto;
+            min-width: 250px;
+        }
+
+        .redes-sociais a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 0.95em;
+        }
+
+        .redes-sociais a:hover {
+            text-decoration: underline;
+        }
+
+        .pagamentos {
+            margin-top: 0; 
+            text-align: right; 
+        }
+
+        .pagamentos p {
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#">Logo</a> 
+        </div>
+        <nav class="menu-principal">
+            <a href="./Home.html">Home</a>
+            <a href="./Hotel.html">Hotel</a>
+            <a href="./Acomodações.html">Acomodações</a>
+            <a href="./Eventos.html">Eventos</a>
+            <a href="./Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>Garanhuns Palace Hotel</h1>
+                <p>a sua melhor opção de hospedagem na cidade das flores e dos festivais</p>
+                </div>
+            <div class="hero-imagem">
+                <img src="../Templates/hotel_frente.jpg" alt="frente do hotel"/>
+            </div>
+        </section>
+
+        <section class="lista-quartos">
+            
+            <div class="quarto-item">
+                <div class="quarto-imagem">
+                    <img src="../Templates/quarto2.jpg" alt="Quarto basico"/>
+                </div>
+                <div class="quarto-descricao">
+                    <h3>Descrição Do Quarto</h3>
+                    <p>Preço: R$ 250,00/noite</p>
+                    <a href="#" class="btn-reserva">Reservar</a>
+                </div>
+            </div>
+
+            <div class="quarto-item">
+                <div class="quarto-imagem">
+                    <img src="../Templates/quarto3.jpg" alt="Quarto mediano"/>
+                </div>
+                <div class="quarto-descricao">
+                    
+                    <h3>Descrição Do Quarto</h3>
+                    <p>Preço: R$ 380,00/noite</p>
+                    <a href="#" class="btn-reserva">Reservar</a>
+                </div>
+            </div>
+            
+            <div class="quarto-item">
+                <div class="quarto-imagem">
+                    <img src="../Templates/quarto1.jpg" alt="quarto de luxo"/>
+                </div>
+                <div class="quarto-descricao">
+                    <h3>Descrição Do Quarto</h3>
+                    <p>Preço: R$ 450,00/noite</p>
+                    <a href="#" class="btn-reserva">Reservar</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="redes-sociais">
+            <h3>REDES SOCIAIS</h3>
+            <a href="https://www.instagram.com/garanhunspalacehotel/">Instagram</a> | 
+            <a href="https://www.facebook.com/GaranhunsPalaceHotell/?locale=pt_BR">Facebook</a> | 
+            <a href="https://www.tripadvisor.com.br/Hotel_Review-g793397-d3253849-Reviews-Garanhuns_Palace_Hotel-Garanhuns_State_of_Pernambuco.html">Trip advisor</a>
+        </div>
+        <div class="pagamentos">
+            <h3>PAGAMENTOS</h3>
+            <p>AMERICAN EXPRESS | MASTER | VISA | ELO | DINERS CLUB</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garanhuns Palace Hotel - Contato Simplificado</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; 
+        }
+
+        :root {
+            --cor-fundo-principal: #1f1f1f;
+            --cor-verde-escuro: #4c6d3f;
+            --cor-cinza-claro: #f5f5f5;
+            --cor-cinza-claro-bg: #e0e0e0;
+            --cor-cinza-imagem: #383838;
+        }
+
+        body {
+            background-color: var(--cor-fundo-principal);
+            color: var(--cor-cinza-claro);
+            line-height: 1.6;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: var(--cor-fundo-principal);
+        }
+
+        .logo a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu-principal {
+            white-space: nowrap; 
+        }
+        
+        .menu-principal a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .menu-principal a:hover {
+            text-decoration: underline;
+        }
+
+        .contato-hero {
+            display: flex;
+            min-height: 60vh; 
+        }
+
+        .contato-info {
+            background-color: var(--cor-cinza-claro-bg);
+            color: var(--cor-fundo-principal);
+            flex: 1;
+            padding: 60px 40px 60px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .contato-info h1 {
+            font-size: 2.5em; 
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        
+        .contato-item {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        
+        
+        .contato-item a {
+            color: var(--cor-fundo-principal); 
+            text-decoration: none;
+        }
+        
+        .contato-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contato-mapa {
+            background-color: var(--cor-cinza-imagem);
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5em;
+            padding: 20px;
+            text-align: center;
+        }
+
+         .contato-mapa a {
+            color: var(--cor-cinza-claro);
+            text-decoration: underline;
+            padding: 15px 30px;
+            border: 1px solid var(--cor-cinza-claro);
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+         }
+         
+         .contato-mapa a:hover {
+             background-color: var(--cor-cinza-claro);
+             color: var(--cor-cinza-imagem);
+             text-decoration: none;
+         }
+
+        .rodape {
+            background-color: var(--cor-verde-escuro);
+            padding: 20px 100px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .rodape h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .redes-sociais, .pagamentos {
+            flex-basis: auto;
+            min-width: 250px;
+        }
+
+        .redes-sociais a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 0.95em;
+        }
+
+        .redes-sociais a:hover {
+            text-decoration: underline;
+        }
+
+        .pagamentos {
+            margin-top: 0; 
+            text-align: right; 
+        }
+
+        .pagamentos p {
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#">Logo</a> 
+        </div>
+        <nav class="menu-principal">
+            <a href="./Home.html">Home</a>
+            <a href="./Hotel.html">Hotel</a>
+            <a href="./Acomodações.html">Acomodações</a>
+            <a href="./Eventos.html">Eventos</a>
+            <a href="./Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-hero">
+            <div class="contato-info">
+                <h1>Contato</h1>
+                
+                <div class="contato-item">
+                    Email : <a href="mailto:reservas@garanhunspalace.com">reservas@garanhunspalace.com</a>
+                </div>
+                
+                <div class="contato-item">
+                    Telefone: <a href="tel:+558737628750">+55 (87) 37628750</a>
+                </div>
+                
+                <div class="contato-item"> 
+                    <p>Endereço: Av, Rui Barbosa-626- Heliópoles, Garanhuns - PE, 55296300</p>
+                </div>
+                
+                <div class="contato-item">
+                    Cnpj: 31.721.545/0001-10
+                </div>
+                
+            </div>
+            <div class="contato-mapa">
+                <a href="https://www.google.com/maps/place/Garanhuns+Palace+Hotel/@-8.8847141,-36.4845267,17z/data=!3m1!5s0x7070cdfc93c59cb:0xf06907b621604c79!4m9!3m8!1s0x7070cdfbd44eb43:0xc3d9f89f07cc9c5b!5m2!4m1!1i2!8m2!3d-8.8847141!4d-36.4819518!16s%2Fg%2F1tcyxmb2?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver localização no Google Maps</a>
+            </div>
+        </section>
+
+        </main>
+
+    <footer class="rodape">
+        <div class="redes-sociais">
+            <h3>REDES SOCIAIS</h3>
+            <a href="https://www.instagram.com/garanhunspalacehotel/">Instagram</a> | 
+            <a href="https://www.facebook.com/GaranhunsPalaceHotell/?locale=pt_BR">Facebook</a> | 
+            <a href="https://www.tripadvisor.com.br/Hotel_Review-g793397-d3253849-Reviews-Garanhuns_Palace_Hotel-Garanhuns_State_of_Pernambuco.html">Trip advisor</a>
+        </div>
+        <div class="pagamentos">
+            <h3>PAGAMENTOS</h3>
+            <p>AMERICAN EXPRESS | MASTER | VISA | ELO | DINERS CLUB</p>
+        </div>
+    </footer>
+
+</body>
+</html>

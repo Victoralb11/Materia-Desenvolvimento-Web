@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garanhuns Palace Hotel - Hotel</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; 
+        }
+
+        :root {
+            --cor-fundo-principal: #1f1f1f;
+            --cor-verde-escuro: #4c6d3f;
+            --cor-cinza-claro: #f5f5f5;
+            --cor-cinza-claro-bg: #e0e0e0;
+            --cor-cinza-imagem: #383838;
+        }
+
+        body {
+            background-color: var(--cor-fundo-principal);
+            color: var(--cor-cinza-claro);
+            line-height: 1.6;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: var(--cor-fundo-principal);
+        }
+
+        .logo a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu-principal a {
+            color: var(--cor-cinza-claro);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .menu-principal a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            min-height: 70vh;
+        }
+
+        .hero-texto {
+            background-color: var(--cor-cinza-claro-bg);
+            color: var(--cor-fundo-principal);
+            flex: 1;
+            padding: 60px 40px 60px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-texto h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .hero-texto p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .hero-imagem {
+            background-color: var(--cor-cinza-imagem);
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+        
+        .hero-imagem img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .btn-reserva {
+            background-color: var(--cor-verde-escuro);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-reserva:hover {
+            background-color: #659253;
+        }
+
+        .historia-wrapper {
+            background-color: var(--cor-fundo-principal);
+            display: flex;
+            justify-content: center; 
+        }
+
+        .historia-texto {
+            flex: none; 
+            width: 60%; 
+            padding: 40px 0 60px 0; 
+            text-align: justify; 
+            color: var(--cor-cinza-claro);
+        }
+
+        .historia-texto h3 {
+            font-size: 1em;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        
+        .historia-texto p {
+            margin-bottom: 18px;
+            font-size: 0.95em;
+            color: #ccc; 
+        }
+
+        .rodape {
+            background-color: var(--cor-verde-escuro);
+            padding: 20px 100px;
+            color: white;
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .rodape h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .redes-sociais, .pagamentos {
+            flex-basis: auto;
+            min-width: 250px;
+        }
+
+        .redes-sociais a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 0.95em;
+        }
+
+        .redes-sociais a:hover {
+            text-decoration: underline;
+        }
+
+        .pagamentos {
+            margin-top: 0; 
+            text-align: right; 
+        }
+
+        .pagamentos p {
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#">LOGO</a> 
+        </div>
+        <nav class="menu-principal">
+            <a href="./Home.html">Home</a>
+            <a href="./Hotel.html">Hotel</a>
+            <a href="./Acomodações.html">Acomodações</a>
+            <a href="./Eventos.html">Eventos</a>
+            <a href="./Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>Garanhuns Palace Hotel</h1>
+                <p>Sua melhor opção de hospedagem na cidade das flores e festivais</p>
+                <a href="#" class="btn-reserva">Reservar</a>
+            </div>
+            <div class="hero-imagem">
+                <img src="../Templates/hotel_frente.jpg" alt="frente do hotel"/>
+            </div>
+        </section>
+
+        <section class="historia-wrapper">
+            <div class="historia-texto">
+                <h3>O HOTEL</h3>
+                
+                <p>O começo um pouco da nossa história</p>
+                <p>A cidade amanhecera coberta de névoas. Era mês de julho, friorento. A névoa e a garoa matinal saíam com os tímidos raios solares, que pareciam emanar de mãos divinas, sendo lançados sobre a <strong>cidade de Garanhuns</strong>. Os pássaros, com as suas asas molhadas, cantavam o céu no início daquela manhã, como se quisessem anunciar o nascimento de um dia esplendoroso.</p>
+                <p>Naquele dia, a cidade recebia o Garanhuns Palace Hotel, como uma mãe que toma seu filho nos braços pela primeira vez.</p>
+                <p>Talvez não tenha sido o prédio que tenha brotado na Avenida Rui Barbosa, mas sim a avenida que tenha brotado para acolher o prédio, que a embelezou por completo, como sinal de gratidão. <strong>“A gratidão é o único tesouro dos humildes”</strong>. William Shakespeare, deve ter escrito isso para esta cidade hospitaleira.</p>
+                <p>As muitas flores da cidade sorriram nas mãos da beira da Heliópolis, e em cada sorriso delas, surgia uma pétala enfeitando as portas do Garanhuns Palace Hotel, que recebia seus hóspedes com estampidos de alegria. O hotel mostrava como uma prece que parecia ter sido soprada pelo vento há antepassados. <strong>“Às vezes, ouço passar o vento; e só de ouvir o vento passar, vale a pena ter nascido”</strong>, escreveu o poeta Fernando Pessoa.</p>
+                <p>Dotado de instalações sofisticadas e primorosas, além de distintos serviços personalizados, o Garanhuns Palace Hotel possui excelente estrutura à sua disposição. Em cada um de seus pormenores, uma dose de conforto e qualidade de serviço. Por isso, ideal para sua hospedagem em viagens a negócio ou a lazer.</p>
+                <p>Dispomos de: Restaurante; Brinquedoteca; Salão de Jogos; Escritório Virtual; Centro de Convenções Salão de TV; Piscina; Lavanderia; Estacionamento; Lojas e Comerciáis.</p>
+                <p>Estes serviços visam, prioritariamente, o seu conforto e bem-estar nesta cidade mágica que é Garanhuns a <strong>"CIDADE DAS FLORES"</strong> ou, ainda, a <strong>"CIDADE DOS FESTIVAIS"</strong>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="redes-sociais">
+            <h3>REDES SOCIAIS</h3>
+            <a href="https://www.instagram.com/garanhunspalacehotel/">Instagram</a> | 
+            <a href="https://www.facebook.com/GaranhunsPalaceHotell/?locale=pt_BR">Facebook</a> | 
+            <a href="https://www.tripadvisor.com.br/Hotel_Review-g793397-d3253849-Reviews-Garanhuns_Palace_Hotel-Garanhuns_State_of_Pernambuco.html">Trip advisor</a>
+        </div>
+        <div class="pagamentos">
+            <h3>PAGAMENTOS</h3>
+            <p>AMERICAN EXPRESS | MASTER | VISA | ELO | DINERS CLUB</p>
+        </div>
+    </footer>
+
+</body>
+</html>
