@@ -50,7 +50,9 @@ Além de se encaixar bem no tema, o Garanhuns Palace é um **negócio local** qu
 - Versão atualizada: [Protótipo final](./Evidencias/ideias/Atualização.png)  
 
 🎬 **Demonstração em vídeo:**  
-[Assista aqui](./Evidencias/Videos/2025-10-27%2002-10-10.mp4)
+[Assista aqui](./Evidencias/Videos/2025-10-27%2002-10-10.mp4) 
+
+**OBS:** Devido ao tamnaho dos arquivos de video e uma igenuidade minha, acabai não subindo eles para o Git, mas na entrega final, para o professor o arquivo foi enviado. já que foi zipado e entre pelo classroom
 
 ---
 
@@ -60,4 +62,5 @@ Com este projeto, procurei criar um site **mais limpo, direto e funcional**, des
 No vídeo acima, explico melhor as escolhas de design e as melhorias que poderiam ser aplicadas ao site real.
   
     
+
 
